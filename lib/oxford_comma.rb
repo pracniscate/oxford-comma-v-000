@@ -10,8 +10,8 @@ case arraySize
     final_result = array.join(" and ")
     return final_result
   else
-    array.last = " and " << array.last
-    final_ = array.join(", ")
+    array[-1] = " and " << array[-1]
+    final_result = array.join(", ")
     return final_result
   end
 end
