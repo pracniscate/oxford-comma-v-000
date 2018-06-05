@@ -1,17 +1,18 @@
 def oxford_comma(array)
   # convert into string using the Oxford comma
 arraySize = array.size
+final_result = Array.new
 
 case arraySize
   when 1
     return array.join
   when 2
-    Array.new = array.join(" and ")
-    return Array.new
+    final_result = array.join(" and ")
+    return final_result
   else
     array.last = " and " << array.last
-    Array.new = array.join(", ")
-    return Array.new
+    final_ = array.join(", ")
+    return final_result
   end
 end
   
