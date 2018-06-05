@@ -15,4 +15,3 @@ case arraySize
     return final_result
   end
 end
-  
